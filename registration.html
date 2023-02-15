@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/load.css" rel="stylesheet">
+    <script defer src="js/html5shiv.js"></script>
+    <script defer src="js/select.js"></script>
+    <script defer src="js/dropdown.js"></script>
+</head>
+<body>
+    <header id="header" role="banner">
+    <div class="main-nav">
+        <div class="container">
+            <div class="header-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand figure" href="https://kazatomprom.kz/ru">
+                        <img class="img-responsive image-main" src="images/logo.png" alt="logo">
+                        <img class="img-responsive image-hover" src="images/logo-hover.png" alt="logo">
+                    </a>
+                </div>
+                <div class="header-top-right pull-right ">
+                    <div class="header_change-lang">
+                        <button class="header_lang-btn header_lang-kz" id="lang-kz">
+                            ҚАЗ
+                        </button>
+                        <button class="header_lang-btn header_lang-ru" id="lang-ru">
+                            РУС
+                        </button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/NAC_Kazatomprom"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/kazatomprom.kz/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kazatomprom"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5NoCBIU4rm7JLolDEzKDYw"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="scroll">
+                            <a class="navbar-right-link" href="index.html" id="mainPage">Главная</a>
+                        </li>
+                        <li class="scroll dropdown">
+                            <button onclick="myFunction()" class="dropbtn" id="userPage">Участники</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a class="dropdown-content-link" href="user/voice.html" id="userVoice">Вокал <br>(эстрада+классика)</a>
+                                <a class="dropdown-content-link" href="user/dancer.html" id="userDance">Танцы <br>(все виды)</a>
+                                <a class="dropdown-content-link" href="user/group.html" id="userGroup">Групповое выступление <br>(Ансамбль, дуэт, трио, квартет)</a>
+                                <a class="dropdown-content-link" href="user/tools.html" id="userTool">Инструментальное выступление <br>(все виды инструменталки)</a>
+                                <a class="dropdown-content-link" href="user/national.html" id="userTraditional">Народное пение</a>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <a class="no-scroll navbar-right-link" href="registration.html" id="registrationPage">Регистрация</a>
+                        </li>
+                        <li>
+                            <a class="no-scroll navbar-right-link" href="broadcast.html" id="broadcastPage">Трансляция</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header><!--/#header-->
+
+    <section id="registration">
+        <div class="registration-section">
+            <div class="container">
+                <div class="registration-content">
+                    <div id="contact-section" class="registration-contact-section">
+                        <h1>Регистрация</h1>
+                        <form id="main-contact-form" class="contact-form" name="contact-form">
+                            <h2 class="contact-heading">Данные участника</h2>
+                            <div class="info-children">
+                                <div class="user_img-add">
+                                    <div id="img-display" class="user_img"></div>
+                                    <input id="img-input" type="file" accept="image/jpg" class="user_img-input">
+                                </div>
+                                <div class="user-content">
+                                    <label class="form-group user-wrap">
+                                        <input type="text" name="name" class="form-control user_name" required placeholder="Имя*">
+                                    </label>
+                                    <label class="form-group user-wrap">
+                                        <input type="text" name="name" class="form-control user_surname" required placeholder="Фамилия*">
+                                    </label>
+                                    <label class="form-group user-wrap">
+                                        <input type="text" name="name" class="form-control user_lastName"  placeholder="Отчество">
+                                    </label>
+                                    <div class="form-group custom-select user-wrap">
+                                        <select name="age" id="age">
+                                            <option value="">Возраст участника</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
+                                            <option value="07">7</option>
+                                            <option value="08">8</option>
+                                            <option value="09">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group custom-select user-wrap">
+                                        <select name="talents" id="talents" required>
+                                            <option value="">Виды таланта:</option>
+                                            <option value="Вокал">Вокал (эстрада+классика)</option>
+                                            <option value="Танцы">Танцы (все виды)</option>
+                                            <option value="Групповое выступление">Групповое выступление <br> (Ансамбль, дуэт, трио, квартет)</option>
+                                            <option value="Инструментальное выступление">Инструментальное выступление <br>(все виды инструменталки)</option>
+                                            <option value="Народное пение">Народное пение</option>
+                                        </select>
+                                    </div>
+                                    <input type="file" accept="video/*" id="upload" class="user_video-input">
+                                </div>
+                            </div>
+                            <h2 class="parent-heading">Данные Родителя</h2>
+                            <div class="info-parents">
+                                <label class="form-group info-parents-child">
+                                    <input type="text" name="name" class="form-control user_parent-name" required placeholder="Имя*">
+                                </label>
+                                <label class="form-group info-parents-child">
+                                    <input type="text" name="name" class="form-control user_parent-surname" required placeholder="Фамилия*">
+                                </label>
+                                <label class="form-group info-parents-child">
+                                    <input type="text" name="name" class="form-control user__parent-lastName"  placeholder="Отчество">
+                                </label>
+                                <div class="form-group info-parents-child custom-select">
+                                    <select name="company" id="company">
+                                        <option value="">Компания</option>
+                                        <option value="01">АО «СП Заречное»</option>
+                                        <option value="02">АО «Волковгеология»</option>
+                                        <option value="03">АО «СП «Акбастау»</option>
+                                        <option value="04">АО «Ульбинский металлургический завод»</option>
+                                        <option value="05">ТОО «KAP Technology»</option>
+                                        <option value="06">ТОО «CK3-U»</option>
+                                        <option value="07">ТОО «СП «Буденовское»</option>
+                                        <option value="08">ТОО «СП «КАТКО»</option>
+                                        <option value="09">ТОО «Qorğan Security»</option>
+                                        <option value="10">ТОО «АППАК»</option>
+                                        <option value="11">ТОО «Байкен-U»</option>
+                                        <option value="12">ТОО «Добывающее предприятие «ОРТАЛЫК»</option>
+                                        <option value="13">ТОО «Институт высоких технологий»</option>
+                                        <option value="14">ТОО «Каратау»</option>
+                                        <option value="15">ТОО «Кызылкум»</option>
+                                        <option value="16">ТОО «Хорасан-U»</option>
+                                        <option value="17">ТОО «РУ-6»</option>
+                                        <option value="18">ТОО «Семизбай-U»</option>
+                                        <option value="19">ТОО «СП «Инкай»</option>
+                                        <option value="20">ТОО «СП «ЮГХК»</option>
+                                        <option value="21">ТОО «KAP Logistics»</option>
+                                        <option value="22">ТОО «Уранэнерго»</option>
+                                    </select>
+                                </div>
+                                <label class="form-group info-parents-child">
+                                    <input type="text" name="name" class="form-control user_dzo" required placeholder="Должность">
+                                </label>
+                                <label class="form-group info-parents-child">
+                                    <input type="number" name="number" class="form-control user_phone" required placeholder="Телефон*">
+                                </label>
+                            </div>
+                            <input type="submit" class="btn btn-primary pull-left user_registration" >
+                            <div hidden id="spinner"></div>
+                        </form>
+                        <img src="images/kids-sing.gif" alt="kid-sing" class="registration-kid-sing-gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>ТОО<a target="_blank" href="https://kaptechnology.kazatomprom.kz/ru"> «KAP Technology»</a> создает самые современные решения для цифровизации Казатомпрома  и является динамично развивающейся ИТ-компанией <br>&copy;2023 <a target="_blank" href="https://kaptechnology.kazatomprom.kz/ru">ТОО «KAP Technology»</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script defer>
+    const sendClientData = async (client, method, id = null) => {
+        try {
+            const res = await fetch(`http://localhost:3000/api/clients/${method === 'POST' ? '' : id}`, {
+                method,
+                body: JSON.stringify(client)
+            })
+
+            return await res.json()
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    let clientObj = {}
+
+    const userName = document.querySelector('.user_name')
+    const userSurname = document.querySelector('.user_surname')
+    const userLastName = document.querySelector('.user_lastName')
+    const userParentName = document.querySelector('.user_parent-name')
+    const userParentSurname = document.querySelector('.user_parent-surname')
+    const userParentLastName = document.querySelector('.user__parent-lastName')
+    const userDzo = document.querySelector('.user_dzo')
+    const userPhone = document.querySelector('.user_phone')
+    const userTalent = document.getElementById('talents')
+    const userAge = document.getElementById('age')
+    const userParentCompany = document.getElementById('company')
+    const imageInput = document.getElementById('img-input')
+    const imageDisplay = document.getElementById('img-display')
+    let phone = []
+
+    let uploaded_image = ""
+    imageInput.addEventListener("change", function()  {
+        let reader = new FileReader()
+        reader.addEventListener("load", () => {
+            uploaded_image = reader.result;
+            imageDisplay.style.backgroundImage = `url(${uploaded_image}`
+        })
+        reader.readAsDataURL(this.files[0])
+    })
+    let uploaded_video = ""
+    let upload = document.getElementById("upload")
+    upload.addEventListener("change", function () {
+        let freader = new FileReader()
+        spinner.removeAttribute('hidden');
+        freader.readAsDataURL(upload.files[0]);
+        freader.onload=function() {
+            console.log(freader.result)
+            spinner.setAttribute('hidden', '');
+            uploaded_video = freader.result
+        }
+    })
+
+    const addUser = async () => {
+        phone.push({
+            type: 'Телефон',
+            value: userPhone.value
+        })
+        clientObj.name = userName.value
+        clientObj.surname = userSurname.value
+        clientObj.lastName = userLastName.value
+        clientObj.parentName = userParentName.value
+        clientObj.parentSurname = userParentSurname.value
+        clientObj.parentLastName = userParentLastName.value
+        clientObj.dzo = userDzo.value
+        clientObj.talent = userTalent.options[userTalent.selectedIndex].text
+        clientObj.age = userAge.options[userAge.selectedIndex].text
+        clientObj.company = userParentCompany.options[userParentCompany.selectedIndex].text
+        clientObj.userImg = uploaded_image
+        clientObj.userVideo = uploaded_video
+        clientObj.contacts = phone
+        try {
+            await sendClientData(clientObj, 'POST')
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    const userRegistration = document.querySelector('.contact-form')
+    userRegistration.addEventListener('submit', addUser)
+
+</script>
+</html>

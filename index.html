@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Блесни талантом kids</title>
+	<link rel="icon" href="favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">	
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script defer src="js/html5shiv.js"></script>
+	<script defer src="js/respond.min.js"></script>
+	<script defer type="text/javascript" src="js/jquery.js"></script>
+	<script defer type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script defer type="text/javascript" src="js/smoothscroll.js"></script>
+	<script defer type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script defer type="text/javascript" src="js/jquery.scrollTo.js"></script>
+	<script defer type="text/javascript" src="js/jquery.nav.js"></script>
+	<script defer type="text/javascript" src="js/main.js"></script>
+	<script defer src="js/changeLang.js"></script>
+	<script defer src="js/scrollTop.js"></script>
+	<script defer src="js/dropdown.js"></script>
+	<script defer src="js/timer.js"></script>
+</head>
+
+<body>
+	<header id="header" role="banner">		
+		<div class="main-nav">
+			<div class="container">
+				<div class="header-top">
+					<div class="navbar-header">
+						<a class="navbar-brand figure" href="https://kazatomprom.kz/ru">
+							<img class="img-responsive image-main" src="images/logo.png" alt="logo">
+							<img class="img-responsive image-hover" src="images/logo-hover.png" alt="logo">
+						</a>
+					</div>
+					<div class="header-top-right pull-right ">
+						<div class="header_change-lang">
+							<button class="header_lang-btn header_lang-kz" id="lang-kz">
+								ҚАЗ
+							</button>
+							<button class="header_lang-btn header_lang-ru" id="lang-ru">
+								РУС
+							</button>
+						</div>
+						<div class="social-icons">
+							<a href="https://twitter.com/NAC_Kazatomprom"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.facebook.com/kazatomprom.kz/"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.instagram.com/kazatomprom"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/channel/UC5NoCBIU4rm7JLolDEzKDYw"><i class="fa fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+		        <div class="row">
+		            <div class="collapse navbar-collapse">
+		                <ul class="nav navbar-nav navbar-right">                 
+		                    <li class="scroll active">
+								<a class="navbar-right-link" href="#home" id="mainPage">Главная</a>
+							</li>
+<!--		                    <li class="scroll">-->
+<!--								<a class="navbar-right-link" href="#about" id="aboutPage">О мероприятии</a>-->
+<!--							</li>-->
+<!--		                    <li class="no-scroll"><a href="#twitter">Отзывы</a></li>-->
+<!--							<li class="scroll">-->
+<!--								<a class="navbar-right-link" href="#event" id="eventPage">Ответственные координаторы</a>-->
+<!--							</li>-->
+							<li class="scroll dropdown">
+								<button onclick="myFunction()" class="dropbtn" id="userPage">Участники</button>
+								<div id="myDropdown" class="dropdown-content">
+									<a class="dropdown-content-link" href="user/voice.html" id="userVoice">Вокал <br>(эстрада+классика)</a>
+									<a class="dropdown-content-link" href="user/dancer.html" id="userDance">Танцы <br>(все виды)</a>
+									<a class="dropdown-content-link" href="user/group.html" id="userGroup">Групповое выступление <br>(Ансамбль, дуэт, трио, квартет)</a>
+									<a class="dropdown-content-link" href="user/tools.html" id="userTool">Инструментальное выступление <br>(все виды инструменталки)</a>
+									<a class="dropdown-content-link" href="user/national.html" id="userTraditional">Народное пение</a>
+								</div>
+							</li>
+							<li>
+								<a class="no-scroll navbar-right-link" href="registration.html" id="registrationPage">Регистрация</a>
+							</li>
+							<li>
+								<a class="no-scroll navbar-right-link" href="broadcast.html" id="broadcastPage">Трансляция</a>
+							</li>
+		                </ul>
+		            </div>
+		        </div>
+	        </div>
+        </div>                    
+	</header><!--/#header-->
+	<section id="home">	
+		<div id="main-slider" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#main-slider" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner home_carousel">
+				<div class="item active">
+					<img class="img-responsive home_slide" src="images/slider/bg1.jpg" alt="slider">
+				</div>
+				<div class="item">
+					<img class="img-responsive home_slide" src="images/slider/bg2.jpg" alt="slider">
+				</div>
+			</div>
+			<div class="home_heading">
+				<h4 class="home_subtitle" id="xDay">22 Марта</h4>
+				<h1 class="home_title">Блесни талантом <span class="home_title-kids">kids</span></h1>
+			</div>
+			<div class="home-timer">
+				<div>
+					<h2 class="home-timer-title" id="homeMeetStart">До старта мероприятия осталось:</h2>
+				</div>
+				<div class="timer-count" id="timer-count">
+					<ul class="timer-count-list">
+						<li class="timer-count-item">
+							<p class="timer-count-day timer-count-number"></p>
+							<p class="timer-count-type" id="timerDay">дней</p>
+						</li>
+						<li class="timer-count-item">
+							<p class="timer-count-hour timer-count-number"></p>
+							<p class="timer-count-type" id="timerHour">часы</p>
+						</li>
+						<li class="timer-count-item">
+							<p class="timer-count-min timer-count-number"></p>
+							<p class="timer-count-type" id="timerMin">минут</p>
+						</li>
+						<li class="timer-count-item">
+							<p class="timer-count-sec timer-count-number"></p>
+							<p class="timer-count-type" id="timerSec">секунд</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="carousel-caption">
+				<a href="registration.html" id="homeRegistration">РЕГИСТРАЦИЯ <i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+	</section><!--/#home-->
+	<section id="about">
+		<div class="about__event">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="event-carousel" class="carousel slide" data-interval="false">
+						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						<div class="carousel-inner about__carousel">
+							<div class="item active">
+								<div class="row">
+									<div class="single-event">
+										<img class="about__kids-img" src="images/kids-1.jpg" alt="event-image">
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="row">
+									<div class="single-event">
+										<img class="about__kids-img" src="images/kids-2.jpg" alt="event-image">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-content">					
+			<h2 id="aboutTitle">О Мероприятии</h2>
+			<p id="aboutDescription">Мы создали чрезвычайно позитивную и непринужденную атмосферу, направленную на развитие ваших навыков, независимо от того, являетесь ли вы абсолютным новичком, пытающимся оторваться от земли, или опытным игроком, стремящимся перейти на следующий уровень. Lorem Ipsum — это просто текст-пустышка полиграфической и наборной индустрии. Lorem Ipsum был стандартным фиктивным текстом в отрасли с 1500-х годов.</p>
+
+		</div>
+	</section><!--/#about-->
+	<section id="event">
+		<div class="container">
+			<div class="row event_row">
+				<h3 class="event__heading" id="eventOrganizer">Ответственные координаторы</h3>
+				<div class="event_organizer">
+					<div class="single-event event_organization">
+						<h4>По вопросам конкурса</h4>
+						<img class="event_admin-img" src="images/Болат%20Жанэль.jpg" alt="event-image">
+						<h4>Жанэль Болат</h4>
+						<h4>+77477779006</h4>
+					</div>
+					<div class="single-event event_organization">
+						<h4>По техническим вопросам</h4>
+						<img class="event_admin-img" src="images/Акбаров%20Н.М%20(2).png" alt="event-image">
+						<h4>Нурсултан Акбаров</h4>
+						<h4>+77751530708</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/#event-->
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <p>ТОО «KAP Technology» <span id="footerDescription">создает самые современные решения для цифровизации Казатомпрома и является динамично развивающейся ИТ-компанией</span> <br>&copy;2023 <a target="_blank" href="https://kaptechnology.kazatomprom.kz/ru">ТОО «KAP Technology»</a></p>
+            </div>
+        </div>
+    </footer>
+	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вокал</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/load.css" rel="stylesheet">
+  <script defer src="../js/voice.js"></script>
+  <script defer src="../js/dropdown.js"></script>
+</head>
+<body>
+<header id="header" role="banner">
+  <div class="main-nav">
+    <div class="container">
+      <div class="header-top">
+        <div class="navbar-header">
+          <a class="navbar-brand figure" href="https://kazatomprom.kz/ru">
+            <img class="img-responsive image-main" src="../images/logo.png" alt="logo">
+            <img class="img-responsive image-hover" src="../images/logo-hover.png" alt="logo">
+          </a>
+        </div>
+        <div class="header-top-right pull-right ">
+          <div class="header_change-lang">
+            <button class="header_lang-btn header_lang-kz" id="lang-kz">
+              ҚАЗ
+            </button>
+            <button class="header_lang-btn header_lang-ru" id="lang-ru">
+              РУС
+            </button>
+          </div>
+          <div class="social-icons">
+            <a href="https://twitter.com/NAC_Kazatomprom"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/kazatomprom.kz/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kazatomprom"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC5NoCBIU4rm7JLolDEzKDYw"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="scroll">
+              <a class="navbar-right-link" href="../index.html" id="mainPage">Главная</a>
+            </li>
+            <li class="scroll dropdown">
+              <button onclick="myFunction()" class="dropbtn" id="userPage">Участники</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="dropdown-content-link" href="../user/voice.html" id="userVoice">Вокал <br>(эстрада+классика)</a>
+                <a class="dropdown-content-link" href="../user/dancer.html" id="userDance">Танцы <br>(все виды)</a>
+                <a class="dropdown-content-link" href="../user/group.html" id="userGroup">Групповое выступление <br>(Ансамбль, дуэт, трио, квартет)</a>
+                <a class="dropdown-content-link" href="../user/tools.html" id="userTool">Инструментальное выступление <br>(все виды инструменталки)</a>
+                <a class="dropdown-content-link" href="../user/national.html" id="userTraditional">Народное пение</a>
+              </div>
+            </li>
+            <li>
+              <a class="no-scroll navbar-right-link" href="../registration.html" id="registrationPage">Регистрация</a>
+            </li>
+            <li>
+              <a class="no-scroll navbar-right-link" href="../broadcast.html" id="broadcastPage">Трансляция</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header><!--/#header-->
+<section id="sponsor">
+  <div id="sponsor-carousel" class="carousel slide" data-interval="false">
+    <div class="container">
+      <div class="row">
+        <h2>Участники Вокала</h2>
+        <div hidden id="spinner"></div>
+        <ul class="user__list-voice"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container">
+    <div class="text-center">
+      <p>ТОО<a target="_blank" href="https://kaptechnology.kazatomprom.kz/ru"> «KAP Technology»</a> создает самые современные решения для цифровизации Казатомпрома  и является динамично развивающейся ИТ-компанией <br>&copy;2023 <a target="_blank" href="https://kaptechnology.kazatomprom.kz/ru">ТОО «KAP Technology»</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
